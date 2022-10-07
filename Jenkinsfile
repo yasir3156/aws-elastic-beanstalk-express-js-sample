@@ -7,6 +7,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'apt instsll npm'
                 sh 'npm install --save'
             }
         }
